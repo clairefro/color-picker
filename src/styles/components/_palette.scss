@@ -1,4 +1,9 @@
-.palette {
-  display: flex;
-  justify-content: center;
+.palette-info {
+  .palette {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    margin-top: 1rem;
+  }
 }

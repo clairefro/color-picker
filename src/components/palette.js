@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ColorScheme from 'color-scheme';
+import Clipboard from 'react-clipboard.js';
 
 import Swatch from './swatch'
 
@@ -27,6 +28,9 @@ const Palette = ({ baseHsl, scheme }) => {
           <Swatch key={i} hex={hex}/>
         ))}
       </div>
+      <Clipboard data-clipboard-text={schemeColors.join(', ')}>
+      Copy all
+      </Clipboard>
     </div>
 
   )

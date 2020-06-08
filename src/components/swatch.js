@@ -1,4 +1,5 @@
 import React from 'react';
+import Clipboard from 'react-clipboard.js';
 
 const Swatch = ({ hex }) => {
   const style = {
@@ -8,8 +9,11 @@ const Swatch = ({ hex }) => {
   }
 
   return (
-    <div className="swatch" style={style}>
-    <p>{hex}</p>
+    <div className="swatch" style={style} >
+      <p>{hex}</p>
+      <Clipboard component="a" data-clipboard-text={hex}>
+        Copy
+      </Clipboard>
     </div>
   )
 }

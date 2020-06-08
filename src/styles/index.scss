@@ -11,9 +11,13 @@ html,body {
   padding: 0;
 }
 
-h1,h2,p {
+h1,h2,p, a, button {
   font-family: 'Permanent Marker', sans-serif;
   font-size: larger;
+}
+
+button {
+  background-color: white;
 }
 
 .App {
