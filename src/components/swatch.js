@@ -8,7 +8,9 @@ const Swatch = ({ hex }) => {
   }
 
   return (
-    <div className="swatch" style={style}></div>
+    <div className="swatch" style={style}>
+    <p>{hex}</p>
+    </div>
   )
 }
 

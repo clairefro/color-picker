@@ -37,7 +37,7 @@ const ColorPickerContainer = ( { setBgColor }) => {
   return (
     <>
       <div className="color-picker-container">
-        <p>Pick base color</p>
+        <h2>Pick base color</h2>
         <ColorWheel getColor={getColor}/>
         <div className="color-info">
           <p style={{height: '1rem'}}>{color.hex}</p>
