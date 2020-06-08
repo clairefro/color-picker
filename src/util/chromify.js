@@ -1,8 +1,7 @@
 import chroma from 'chroma-js';
 
-export default function chromify(hexArray, s, l) {
+export default function chromify(hexArray, s, l, h) {
   return hexArray.map(hex => {
-
-    return chroma(hex).set('hsl.s', s).set('hsl.l', l).hex()
+    return chroma(hex).set('hsl.l', l).set('hsl.s', s).hex()
   });
 }

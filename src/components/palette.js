@@ -21,7 +21,6 @@ const Palette = ({ baseHsl, scheme }) => {
 
   return schemeColors ? (
     <div className="palette-info">
-    {console.log(schemeColors)}
       <p>{scheme}</p>
       <div className="palette">
         {schemeColors.map((hex, i) => (
